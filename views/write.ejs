@@ -1,0 +1,28 @@
+<%- include('partials/header', { title: 'Create Post' }) %>
+<%- include('partials/navbar') %>
+
+<main class="centered-page">
+  <h1>Create a New Post</h1>
+  <form action="/write" method="POST">
+    <label for="title">Title:</label><br />
+    <input type="text" id="title" name="title" required /><br />
+
+    <label for="content">Content:</label><br />
+    <textarea id="content" name="content" rows="8" required></textarea><br />
+
+    <button type="submit">Create</button>
+  </form>
+  <% if (error) { %>
+  <script>
+    alert("<%= error %>");
+  </script>
+<% } %>
+
+<% if (success) { %>
+  <script>
+    alert("<%= success %>");
+  </script>
+<% } %>
+</main>
+
+<%- include('partials/footer') %>

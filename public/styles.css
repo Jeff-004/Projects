@@ -1,0 +1,188 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #A0C878;
+  display: flex;
+  flex-direction: column;
+}
+
+.Name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #2c3e50; 
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.sub-name {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #2c3e50; 
+  margin: 0;
+  margin-top: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-style: italic;
+}
+
+main h1{
+  text-align: center;
+}
+
+main h1 span {
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #222; 
+}
+
+ul {
+  list-style: none;      /* remove bullet points */
+  padding-left: 0;       
+  margin: 0 auto;        /* center the ul block horizontally */
+  text-align: center;    /* center text inside each li */
+}
+
+/* Navbar styles */
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #EBE8E2;
+  text-align: center;
+}
+
+.navbar a {
+  flex: 1;
+  padding: 20px;
+  color: darkgreen;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #A0C878;
+}
+
+
+main {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+main a {
+  color: #2c3e50;          
+  text-decoration: none;   
+  transition: color 0.3s;
+}
+
+main a:hover {
+  color: white;          
+  text-decoration: underline; 
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #EBE8E2;
+  color: darkgreen;
+  text-align: center;
+  padding: 15px 0;
+  /* stick footer to bottom if page content is short */
+  margin-top: auto;
+}
+
+/* Only center content on pages that use .centered-page */
+.centered-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+
+.centered-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.centered-page input,
+.centered-page textarea,
+.centered-page button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.centered-page button {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.centered-page button:hover {
+  background-color: #ccc;
+}
+
+/* Style the form inside navbar to behave like a link */
+.navbar form {
+  flex: 1;
+  margin: 0;
+}
+
+.navbar form button {
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.navbar form button:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Container for the Welcome message */
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 90%;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  color: #2c7be5;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}

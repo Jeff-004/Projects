@@ -1,0 +1,23 @@
+<%- include('partials/header', { title: 'Register' }) %>
+<%- include('partials/navbar') %>
+
+<main class="centered-page">
+  <h1><span>Register</span></h1>
+  <form action="/register" method="POST">
+    <label for="username">Username:</label><br />
+    <input type="text" id="username" name="username" required /><br />
+
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" name="password" required /><br />
+
+    <button type="submit">Register</button>
+  </form>
+
+  <% if (typeof error !== 'undefined' && error) { %>
+    <script>
+      alert("<%= error %>");
+    </script>
+  <% } %>
+</main>
+
+<%- include('partials/footer') %>

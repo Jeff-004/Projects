@@ -1,0 +1,25 @@
+<%- include('partials/header', { title: 'Home' }) %>
+<%- include('partials/navbar') %>
+<h1 class="Name">BlogScape</h1>
+<h4 class="sub-name">Where you can write to your heart's content</h4>
+
+
+<main class="blog-post">
+  <h1><span>Recent Posts</span></h1>
+
+  <% if (posts.length === 0) { %>
+    <p>No posts available.</p>
+  <% } else { %>
+    <ul>
+      <% posts.forEach(post => { %>
+        <li>
+          <a href="/posts/<%= post.id %>" ><%= post.title %></a>
+        </li>
+      <% }) %>
+    </ul>
+  <% } %>
+</main>
+
+
+
+<%- include('partials/footer') %>

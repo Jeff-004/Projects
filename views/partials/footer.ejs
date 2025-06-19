@@ -1,0 +1,10 @@
+<footer>
+  <p id="footer-time">&copy; <span id="year"></span> | Last updated: <span id="datetime"></span></p>
+  <script>
+    const now = new Date();
+    document.getElementById("year").textContent = now.getFullYear();
+    document.getElementById("datetime").textContent = now.toLocaleString();
+  </script>
+</footer>
+
+
